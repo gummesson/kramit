@@ -39,10 +39,32 @@ h1 {
   font-weight: 400;
 }
 
+/* Paragraphs */
+
+p {
+  margin-bottom: 1.5em;
+}
+
+/* Links */
+
+a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+  a:hover,
+  a:active,
+  a:focus {
+    color: #999;
+    border-bottom: 1px solid #999;
+  }
+
 /* Forms */
 
 textarea,
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
   padding: 8px 12px;
   font   : inherit;
   outline: none;
@@ -55,33 +77,44 @@ textarea {
   border : 2px solid #333;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
   margin-right    : 0.75em;
-  width           : 25%;
+  width           : 20%;
   line-height     : 1;
   border          : 0;
   background-color: #333;
   color           : #fefefe;
 }
 
-  input[type="submit"]:active {
-    position: relative;
-    top: 1px;
-  }
 
-  input[type="submit"]:hover {
+  .hover-normal:hover,
+  .hover-warning:hover {
     cursor: pointer;
   }
 
-    input[type="submit"]:active,
-    input[type="submit"]:hover{
+    .hover-normal:hover,
+    .hover-normal:active {
       background-color:#666;
+    }
+
+    .hover-warning:hover,
+    .hover-warning:active {
+      background-color:#aa0000;
     }
 
 /* Shared */
 
+a:active,
+.hover-normal:active,
+.hover-warning:active {
+  position: relative;
+  top: 1px;
+}
+
 .app-header,
 textarea,
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
   margin-top: 1.5em;
 }

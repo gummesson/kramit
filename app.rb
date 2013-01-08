@@ -3,10 +3,11 @@ require 'rubygems'
 require 'sinatra'
 require 'kramdown'
 
-# The name of the app
-APP_NAME = "Kramit!"  
+# App 
+APP_NAME = "Kramit!"
+APP_DESC = "Yet another Markdown preview app."
 
-# Write
+# Index
 get '/' do
   erb :index
 end

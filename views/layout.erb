@@ -2,14 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title><%= "#{APP_NAME}" %></title>
+    <title><%= "#{APP_NAME}" %> | <%= "#{APP_DESC}" %></title>
+    <meta name="description" content="<%= "#{APP_NAME}" %> | <%= "#{APP_DESC}" %>">
+    <meta name="author" content="Ellen Gummesson">
     <link rel="stylesheet" href="/global.css" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Cousine:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="app-container">
       <header class="app-header">
-      <h1><%= "#{APP_NAME}" %></h1>
+        <h1><%= "#{APP_NAME}" %></h1>
+        <p>
+          Yet another <a href="http://daringfireball.net/projects/markdown/" title="Markdown" alt="Markdown">Markdown</a> preview app.
+          Built with <a href="http://www.sinatrarb.com/" title="Sinatra" alt="Sinatra">Sinatra</a> and <a href="http://kramdown.rubyforge.org/" title="kramdown" alt="kramdown">kramdown</a>.
+        </p>
       </header>
       <div class="app-content">
         <%= yield %>
