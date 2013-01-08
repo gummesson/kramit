@@ -1,9 +1,10 @@
 # Requirements
 require 'rubygems'
+require 'bundler/setup'
 require 'sinatra'
 require 'kramdown'
 
-# App 
+# App Information
 APP_NAME = "Kramit!"
 APP_DESC = "Yet another Markdown preview app."
 
