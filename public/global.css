@@ -26,8 +26,10 @@ body {
   margin: 0 auto;
 }
 
-.app-header {
+.app-header,
+.app-footer {
   padding-top: 1em;
+  overflow   : hidden;
 }
 
 /* Heading */
@@ -113,6 +115,7 @@ a:active,
 }
 
 .app-header,
+.app-footer,
 textarea,
 input[type="submit"],
 input[type="reset"] {

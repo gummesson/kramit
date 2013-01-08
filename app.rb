@@ -7,13 +7,17 @@ require 'kramdown'
 APP_NAME = "Kramit!"
 APP_DESC = "Yet another Markdown preview app."
 
-# Index
-get '/' do
-  erb :index
+class Kramit
+  # Index
+  get '/' do
+    erb :index
+  end
+
+  # Preview
+  post '/preview' do
+    @preview = Kramdown::Document.new("#{params[:content]}", :auto_ids => false).to_html
+    erb :preview, :layout => false
+  end
 end
 
-# Preview
-post '/preview' do
-  @preview = Kramdown::Document.new("#{params[:content]}", :auto_ids => false).to_html
-  erb :preview, :layout => false
-end
+Kramit.new
