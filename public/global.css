@@ -16,7 +16,7 @@ body {
 
 ::selection {
   background-color: #333;
-  color: #fefefe;
+  color           : #fefefe;
 }
 
 /* Main */
@@ -48,15 +48,15 @@ p {
 /* Links */
 
 a {
-  color: #333;
+  color          : #333;
   text-decoration: none;
-  border-bottom: 1px solid #333;
+  border-bottom  : 1px solid #333;
 }
 
   a:hover,
   a:active,
   a:focus {
-    color: #999;
+    color        : #999;
     border-bottom: 1px solid #999;
   }
 
@@ -109,7 +109,7 @@ a:active,
 .hover-normal:active,
 .hover-warning:active {
   position: relative;
-  top: 1px;
+  top     : 1px;
 }
 
 .app-header,

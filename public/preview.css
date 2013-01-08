@@ -45,7 +45,7 @@ blockquote {
   border-left: 1px solid #ddd;
   }
 code {
-  font-family: "Cousine", "Liberation Mono", Consolas, "DejaVu Sans Mono", Menlo, Monaco, Andale Mono, monospace;
+  font-family: Consolas, "DejaVu Sans Mono", Menlo, Monaco, Andale Mono, monospace;
   font-size: .9em;
   background: white;
   }
