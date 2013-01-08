@@ -1,5 +1,5 @@
 # Source
-source :rubygems
+source 'http://rubygems.org'
 
 # Gems
 gem 'sinatra'
