@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><%= "#{APP_NAME}" %></title>
+    <link rel="stylesheet" href="/global.css" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Cousine:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+      <h1><%= "#{APP_NAME}" %></h1>
+      </header>
+      <div class="app-content">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
