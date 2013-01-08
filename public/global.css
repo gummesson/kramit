@@ -6,6 +6,13 @@
   box-sizing        : border-box;
 }
 
+/* HTML */
+
+html {
+  width     : 95%;
+  min-height: 100%;
+}
+
 /* Body */
 
 body {
@@ -22,8 +29,7 @@ body {
 /* Main */
 
 .app-container {
-  width: 720px;
-  margin: 0 auto;
+  max-width: 720px;
 }
 
 .app-header,
@@ -82,7 +88,7 @@ textarea {
 input[type="submit"],
 input[type="reset"] {
   margin-right    : 0.75em;
-  width           : 20%;
+  min-width       : 20%;
   line-height     : 1;
   border          : 0;
   background-color: #333;
@@ -120,4 +126,22 @@ textarea,
 input[type="submit"],
 input[type="reset"] {
   margin-top: 1.5em;
+}
+
+html,
+.app-container {
+   margin: 0 auto; 
+}
+
+/* Media Queries */
+@media only screen and (max-width: 640px) {
+  
+  .app-header {
+    padding-top: 0;
+  }
+
+  .app-footer p {
+    margin-bottom: 0.75em;
+  }
+
 }
