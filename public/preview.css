@@ -1,7 +1,7 @@
 html, body {
-  padding:1em;
-  margin:auto;
-  max-width:42em;
+  width:95%;
+  margin:0 auto;
+  min-height:100%;
   background:#fefefe;
   }
 body {
@@ -10,7 +10,11 @@ body {
   line-height: 1.4;
   text-align: justify;
   }
-
+.preview-container {
+  max-width:640px;
+  margin:0 auto;
+  padding:2em 0;
+  }
 /* Typography
 -------------------------------------------------------- */
 
@@ -72,3 +76,12 @@ hr {
   border-left: 0;
   border-right: 0;
   }
+
+/* Media Queries */
+@media only screen and (max-width: 640px) {
+  
+  .preview-container {
+    padding: 1em 0 0.5em;
+  }
+
+}
