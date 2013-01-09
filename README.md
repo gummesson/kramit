@@ -2,6 +2,24 @@
 
 A simple Markdown preview app built with [Sinatra](http://www.sinatrarb.com/ "Sinatra") and [kramdown](http://kramdown.rubyforge.org/ "kramdown").
 
+## Usage
+
+Run:
+
+	bundle install
+
+And then:
+
+	rackup
+
+After that, go to `localhost:9292`.
+
+## Requirements
+
+- [Sinatra](http://www.sinatrarb.com/ "Sinatra")
+- [kramdown](http://kramdown.rubyforge.org/ "kramdown")
+- [Bundler](http://gembundler.com/ "Bundler")
+
 ## Acknowledgements
 
 The preview CSS theme is [Foghorn](https://github.com/jasonm23/markdown-css-themes "Foghorn") by [JasonM23](https://github.com/jasonm23 "JasonM23").
