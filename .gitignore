@@ -17,3 +17,6 @@ Gemfile.lock
 .yardoc
 _yardoc
 doc/
+
+public/global.min.css
+public/preview.min.css
