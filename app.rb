@@ -7,7 +7,7 @@ require 'kramdown'
 APP_NAME = "Kramit!"
 APP_DESC = "Yet another Markdown preview app."
 
-class Kramit
+class Kramit < Sinatra::Application
   # Index
   get '/' do
     erb :index
@@ -29,5 +29,3 @@ class Kramit
     erb :error
   end
 end
-
-Kramit.new
