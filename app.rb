@@ -19,11 +19,13 @@ class Kramit < Sinatra::Application
     erb :preview, :layout => false
   end
 
+  # Not Found
   not_found do
     @message = "Whoops! The requested route couldn't be found. Sorry!"
     erb :error
   end
 
+  # Error
   error do
     @message = "Whoops! An error occurred. Booooo!"
     erb :error

@@ -16,9 +16,9 @@ After that, go to `localhost:9292`.
 
 ## Requirements
 
+- [Bundler](http://gembundler.com/ "Bundler")
 - [Sinatra](http://www.sinatrarb.com/ "Sinatra")
 - [kramdown](http://kramdown.rubyforge.org/ "kramdown")
-- [Bundler](http://gembundler.com/ "Bundler")
 
 ## Acknowledgements
 
