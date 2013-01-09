@@ -47,10 +47,19 @@ h1 {
   font-weight: 400;
 }
 
+.brand,
+.brand a {
+  border-bottom: 1px solid transparent;
+}
+
 /* Paragraphs */
 
 p {
   margin-bottom: 1.5em;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 /* Links */
@@ -95,7 +104,6 @@ input[type="reset"] {
   color           : #fefefe;
 }
 
-
   .hover-normal:hover,
   .hover-warning:hover {
     cursor: pointer;
@@ -113,6 +121,19 @@ input[type="reset"] {
 
 /* Shared */
 
+html,
+.app-container {
+   margin: 0 auto; 
+}
+
+.app-header,
+.app-footer,
+.app-content,
+input[type="submit"],
+input[type="reset"] {
+  margin-top: 1.5em;
+}
+
 a:active,
 .hover-normal:active,
 .hover-warning:active {
@@ -120,20 +141,8 @@ a:active,
   top     : 1px;
 }
 
-.app-header,
-.app-footer,
-textarea,
-input[type="submit"],
-input[type="reset"] {
-  margin-top: 1.5em;
-}
-
-html,
-.app-container {
-   margin: 0 auto; 
-}
-
 /* Media Queries */
+
 @media only screen and (max-width: 640px) {
   
   .app-header {
