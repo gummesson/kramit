@@ -16,14 +16,14 @@ html {
 /* Body */
 
 body {
-  font      : 400 112.5%/1.5 "Cousine", "Liberation Mono", Consolas, "DejaVu Sans Mono", Menlo, Monaco, Andale Mono, monospace;
-  color     : #333;
-  background: #fefefe;
+  font            : 400 112.5%/1.5 "Cousine", "Liberation Mono", Consolas, "DejaVu Sans Mono", Menlo, Monaco, Andale Mono, monospace;
+  color           : #333;
+  background-color: #fefefe;
 }
 
 ::selection {
-  background-color: #333;
   color           : #fefefe;
+  background-color: #333;
 }
 
 /* Main */
@@ -99,9 +99,9 @@ input[type="reset"] {
   margin-right    : 0.75em;
   min-width       : 20%;
   line-height     : 1;
-  border          : 0;
-  background-color: #333;
   color           : #fefefe;
+  background-color: #333;
+  border          : 0;
 }
 
   .hover-normal:hover,
