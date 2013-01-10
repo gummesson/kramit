@@ -8,6 +8,15 @@ APP_NAME = "Kramit!"
 APP_DESC = "Yet another Markdown preview app."
 
 class Kramit < Sinatra::Application
+
+  # Helpers
+  helpers do
+    def error(message)
+      @message = message      
+      erb :error
+    end
+  end
+
   # Index
   get '/' do
     erb :index
@@ -21,13 +30,11 @@ class Kramit < Sinatra::Application
 
   # Not Found
   not_found do
-    @message = "Whoops! The requested route couldn't be found. Sorry!"
-    erb :error
+    error("Whoops! The requested route couldn't be found. Sorry!")
   end
 
   # Error
   error do
-    @message = "Whoops! An error occurred. Booooo!"
-    erb :error
+    error("Whoops! An error occurred. Booooo!")
   end
 end
