@@ -8,11 +8,10 @@ APP_NAME = "Kramit!"
 APP_DESC = "Yet another Markdown preview app."
 
 class Kramit < Sinatra::Application
-
   # Helpers
   helpers do
     def error(message)
-      @message = message      
+      @message = message
       erb :error
     end
   end
