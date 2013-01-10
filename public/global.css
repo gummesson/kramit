@@ -111,12 +111,12 @@ input[type="reset"] {
 
     .hover-normal:hover,
     .hover-normal:active {
-      background-color:#666;
+      background-color: #666;
     }
 
     .hover-warning:hover,
     .hover-warning:active {
-      background-color:#aa0000;
+      background-color: #aa0000;
     }
 
 /* Shared */

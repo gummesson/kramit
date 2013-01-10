@@ -1,3 +1,5 @@
+Gemfile.lock
+Rakefile
 *.gem
 *.rbc
 .bundle
@@ -11,13 +13,12 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
-Gemfile.lock
-Rakefile
 
 # YARD artifacts
 .yardoc
 _yardoc
 doc/
 
+# Minified CSS
 public/global.min.css
 public/preview.min.css
