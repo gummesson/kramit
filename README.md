@@ -1,6 +1,6 @@
 # Kramit!
 
-A simple Markdown preview app built with [Sinatra](http://www.sinatrarb.com/ "Sinatra") and [kramdown](http://kramdown.rubyforge.org/ "kramdown").
+A simple Markdown preview app. Built with [Sinatra](http://www.sinatrarb.com/ "Sinatra") and [kramdown](http://kramdown.rubyforge.org/ "kramdown").
 
 ## Usage
 
