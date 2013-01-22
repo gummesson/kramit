@@ -1,15 +1,15 @@
-# Gem requirements
+# Gems
 require 'rubygems'
 require 'sinatra'
 require 'kramdown'
 
-# App information
+# Information
 APP_NAME = "Kramit!"
 APP_DESC = "Yet another Markdown preview app."
 
 # Set app directory as root
 $:.unshift File.dirname(__FILE__)
 
-# App requirements
+# App Library
 require 'lib/helpers'
 require 'lib/routes'
