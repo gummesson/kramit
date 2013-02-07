@@ -15,6 +15,6 @@ helpers do
   #           parsed to HTML via the kramdown gem.
   #
   def kramdown(content)
-    Kramdown::Document.new("#{content}").to_html
+    Kramdown::Document.new(content).to_html
   end
 end
